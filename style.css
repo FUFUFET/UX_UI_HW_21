@@ -60,7 +60,8 @@ a:focus{
         text-align: center; 
         color: #ffffff;
         background-color: black;
-        font-size: 16px;}
+        font-size: 16px;
+      }
          
         .pc-navlinks{
           align-items: baseline;
@@ -242,25 +243,40 @@ footer{
           
           @media  (min-width :601px) and (max-width :1100px){
           
-
+            .container{
+    
+              display: grid;
+              height:150vh;
+              grid-template-columns:1fr ;
+              grid-template-rows:0.1fr 0.01fr 2fr 0.3r;
+              grid-template-areas: "header" "nav" "main""footer";}
+             main{
+              display: grid;
+              height:120vh;
+              grid-template-columns:1fr ;
+              grid-template-rows:0.5fr 0.5fr;
+              grid-template-areas: "ball" "mj";
+             }
             
             #logo{
               width: 150px;}
             
              .ball{
-              display: grid;
+              display :grid;
               height: 50vh;
               grid-template-columns:1fr;
               grid-template-rows:0.1fr 0.1fr 0.9fr;
               grid-template-areas: "h1" "A01" "A02"; 
-              text-align: center;}
+              text-align: center;
+              grid-area: ball;}
             
-              p{
+              p{font-size: 16px;
               width: 600px;
               max-width: 90%;
               padding: 0;}
   
               h1{
+                font-size: 24px;
                 grid-area: h1;
                 margin: 10px 0px;}
               
@@ -273,7 +289,7 @@ footer{
             
             .A02{
               grid-area: A02;
-              width: 500px;
+              width: 400px;
               align-self: center;
               justify-self: center;}
           
@@ -283,9 +299,11 @@ footer{
               grid-template-columns:1fr;
               grid-template-rows:0.1fr 0.1fr 0.9fr;
               grid-template-areas: "h2" "B01" "B02"; 
-              text-align: center;}
+              text-align: center;
+              grid-area: mj;}
              
             h2{
+              font-size: 24px;
               grid-area: h2;
               margin: 10px 0px;}
             
@@ -297,7 +315,7 @@ footer{
               margin: 0;}
             .B02{
               grid-area: B02;
-              width: 500px;
+              width: 400px;
               align-self: center;
               justify-self: center;}
             .sp-menu{
