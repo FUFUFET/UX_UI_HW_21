@@ -189,7 +189,8 @@ footer{
             grid-template-columns:1fr 1fr;
             grid-template-rows:0.1fr 0.9fr;
             grid-template-areas: "h1 h1" "A01 A02"; 
-            text-align: center;}
+            text-align: center;
+            overflow: auto;}
             
           
           
@@ -217,7 +218,8 @@ footer{
             grid-template-columns:1fr 1fr;
             grid-template-rows:0.1fr 0.9fr;
             grid-template-areas: "h2 h2" "B02 B01"; 
-            text-align: center;}
+            text-align: center;
+            overflow: auto;}
            
           h2{
             grid-area: h2;}
@@ -256,6 +258,7 @@ footer{
               grid-template-columns:1fr ;
               grid-template-rows:0.5fr 0.5fr;
               grid-template-areas: "ball" "mj";
+              overflow: auto;
              }
             
             #logo{
@@ -268,7 +271,8 @@ footer{
               grid-template-rows:0.1fr 0.1fr 0.9fr;
               grid-template-areas: "h1" "A01" "A02"; 
               text-align: center;
-              grid-area: ball;}
+              grid-area: ball;
+              overflow: auto;}
             
               p{font-size: 16px;
               width: 600px;
@@ -300,7 +304,8 @@ footer{
               grid-template-rows:0.1fr 0.1fr 0.9fr;
               grid-template-areas: "h2" "B01" "B02"; 
               text-align: center;
-              grid-area: mj;}
+              grid-area: mj;
+              overflow: auto;}
              
             h2{
               font-size: 24px;
