@@ -7,15 +7,16 @@ html {
   
   .container{
     display: grid;
-    height: 100vh;
+    height: 120%;
     grid-template-columns:1fr ;
-    grid-template-rows:0.1fr 0.1fr 1fr 0.1fr;
+    grid-template-rows:0.1fr 0.01fr 1fr 0.1fr;
     grid-template-areas: "header" "nav" "main""footer";}
     
 
 main{
   background-color: #ffffff;
-  color: black;}
+  color: black;
+  }
 
 ul{
   list-style: none;
@@ -186,7 +187,7 @@ main .mj{
            .ball{
           
             display: grid;
-            height: 50vh;
+            height: 50%;
             grid-template-columns:1fr 1fr;
             grid-template-rows:0.1fr 0.9fr;
             grid-template-areas: "h1 h1" "A01 A02"; 
@@ -215,11 +216,12 @@ main .mj{
           .mj{
           
             display: grid;
-            height: 50vh;
+            height: 50%;
             grid-template-columns:1fr 1fr;
             grid-template-rows:0.1fr 0.9fr;
             grid-template-areas: "h2 h2" "B02 B01"; 
-            text-align: center;}
+            text-align: center;
+            }
            
           h2{
             grid-area: h2;}
@@ -260,7 +262,8 @@ main .mj{
              .ball{
             
               display: grid;
-              height: 50vh;
+              height: 50%;
+              min-height: auto;
               grid-template-columns:1fr;
               grid-template-rows:0.1fr 0.1fr 0.9fr;
               grid-template-areas: "h1" "A01" "A02"; 
@@ -295,11 +298,13 @@ main .mj{
   
             .mj{
               display: grid;
-              height: 50vh;
+              height:  50%;
+              min-height: auto;
               grid-template-columns:1fr;
               grid-template-rows:0.1fr 0.1fr 0.9fr;
               grid-template-areas: "h2" "B01" "B02"; 
-              text-align: center;}
+              text-align: center;
+              margin-bottom: 10%;}
              
             h2{
               font-size: 24px;
