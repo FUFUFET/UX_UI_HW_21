@@ -15,8 +15,7 @@ html {
 
 main{
   background-color: #ffffff;
-  color: black;
-  }
+  color: black;}
 
 ul{
   list-style: none;
@@ -81,13 +80,11 @@ header{
         
 
     main .ball{
-      padding: 10px 0px;
-      overflow: auto;}
+      padding: 10px 0px;}
           
     
 main .mj{
-      padding-top: 20px;
-      overflow: auto;} 
+      padding-top: 20px;} 
     
 
     footer{
